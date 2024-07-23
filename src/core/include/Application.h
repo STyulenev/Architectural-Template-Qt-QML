@@ -2,7 +2,7 @@
 
 #include <QGuiApplication>
 
-namespace Core {
+namespace ATQQ::Core {
 
 class Application : public QGuiApplication
 {
@@ -16,4 +16,4 @@ public:
 
 };
 
-} // namespace Core
+} // namespace ATQQ::Core

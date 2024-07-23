@@ -10,19 +10,14 @@ Template.RoundButton {
 
     radius: Common.Consts.mainRadiusComponent
     checkable: false
-    focusPolicy: Qt.NoFocus
 
     // QTBUG-85685
     Component.onCompleted: {
-        if (roundButton.focusPolicy === Qt.TabFocus)
-            palette.button = roundButton.enabled ? Common.Colors.permanentСolors.yellowButtonColor : Common.Colors.currentTheme.disabledButtonColor;
-        else
-            palette.button = roundButton.enabled ? Common.Colors.currentTheme.enabledButtonColor : Common.Colors.currentTheme.disabledButtonColor;
+        palette.button = roundButton.enabled ?
+                    Common.Colors.currentTheme.mainBackgroundColor : Common.Colors.currentTheme.disabledButtonColor;
 
-        if (roundButton.focusPolicy === Qt.TabFocus)
-            palette.highlight = roundButton.enabled ? Common.Colors.currentTheme.enabledButtonColor : Common.Colors.currentTheme.disabledButtonColor;
-        else
-            palette.highlight = roundButton.enabled ? Common.Colors.permanentСolors.yellowButtonColor : Common.Colors.currentTheme.disabledButtonColor;
+        palette.highlight = roundButton.enabled ?
+                    Common.Colors.currentTheme.mainThemeColor : Common.Colors.currentTheme.disabledButtonColor;
     }
 
     icon {
@@ -46,11 +41,7 @@ Template.RoundButton {
         font: roundButton.font
         color: {
             if (roundButton.enabled) {
-                if (roundButton.focusPolicy === Qt.TabFocus)  {
-                    return roundButton.pressed ? Common.Colors.currentTheme.mainButtonTextColor : Common.Colors.permanentСolors.textBlackColor;
-                } else {
-                    return roundButton.pressed ? Common.Colors.permanentСolors.textBlackColor : Common.Colors.currentTheme.mainButtonTextColor;
-                }
+                return roundButton.pressed ? Common.Colors.permanentСolors.blackColor : Common.Colors.currentTheme.mainThemeColor
             } else {
                 return Common.Colors.currentTheme.disabledButtonTextColor;
             }
@@ -64,5 +55,10 @@ Template.RoundButton {
 
         radius: roundButton.radius
         color: roundButton.pressed ? roundButton.palette.highlight : roundButton.palette.button
+
+        border {
+            color: roundButton.enabled ? Common.Colors.currentTheme.mainThemeColor : Common.Colors.currentTheme.disabledButtonColor
+            width: 2
+        }
     } // Rectangle
 } // Template.RoundButton

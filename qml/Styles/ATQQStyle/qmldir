@@ -1,5 +1,13 @@
+###################################################################
+#
+# Модуль с пользовательской стилизацией стандартных компонентов
+#
+# (см. https://doc.qt.io/qt-6/qtquickcontrols-customize.html)
+#
+###################################################################
+
 module ATQQStyle
 
 ApplicationWindow 1.0 ApplicationWindow.qml
-Label 1.0 Label.qml
-RoundButton 1.0 RoundButton.qml
+Label             1.0 Label.qml
+RoundButton       1.0 RoundButton.qml

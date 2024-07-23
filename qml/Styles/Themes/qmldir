@@ -1,11 +1,12 @@
-#####################################################
+###################################################################
 #
 # Модуль с темами
 #
-#####################################################
+###################################################################
 
 module Themes
 
 AbstractTheme 1.0 AbstractTheme.qml
-DarkTheme     1.0 DarkTheme.qml
-LightTheme    1.0 LightTheme.qml
+BlueTheme     1.0 BlueTheme.qml
+PurpleTheme   1.0 PurpleTheme.qml
+RedTheme      1.0 RedTheme.qml

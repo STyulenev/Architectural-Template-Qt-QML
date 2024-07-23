@@ -17,12 +17,13 @@
         <file>qml/Styles/ATQQStyle/Label.qml</file>
         <file>qml/Styles/ATQQStyle/RoundButton.qml</file>
         <file>qml/Styles/Themes/AbstractTheme.qml</file>
-        <file>qml/Styles/Themes/DarkTheme.qml</file>
-        <file>qml/Styles/Themes/LightTheme.qml</file>
         <file>qml/Styles/Themes/qmldir</file>
         <file>qml/Common/Colors.qml</file>
         <file>qml/Common/Fonts.qml</file>
         <file>qml/Common/Enums.qml</file>
         <file>qml/Styles/ATQQStyle/qmldir</file>
+        <file>qml/Styles/Themes/BlueTheme.qml</file>
+        <file>qml/Styles/Themes/PurpleTheme.qml</file>
+        <file>qml/Styles/Themes/RedTheme.qml</file>
     </qresource>
 </RCC>

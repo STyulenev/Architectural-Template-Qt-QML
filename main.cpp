@@ -4,7 +4,7 @@
 
 auto main(int argc, char* argv[]) -> int
 {
-    Core::Application app(argc, argv);
+    ATQQ::Core::Application app(argc, argv);
     app.launch();
 
     QQmlApplicationEngine engine;

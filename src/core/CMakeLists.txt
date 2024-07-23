@@ -16,6 +16,7 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Gui REQUIRED)
 file(GLOB core-src "include/*.h" "./*.cpp")
 
 add_library(${PROJECT_NAME} STATIC ${core-src})
+add_library(ATQQ::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
 

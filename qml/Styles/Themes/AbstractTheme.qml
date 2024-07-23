@@ -4,14 +4,14 @@ QtObject {
     id: abstractTheme
 
     property color mainBackgroundColor;
+    property color mainThemeColor;
 
     property color textColor;
-    property color screenTitleColor;
 
     // Button color properties
     property color mainButtonTextColor;
     property color disabledButtonTextColor;
-    property color enabledButtonColor;
     property color disabledButtonColor;
 
+    // другие цвета ...
 }

@@ -6,8 +6,9 @@ QtObject {
     id: enums
 
     enum Themes {
-        DARK,
-        LIGHT
+        BLUE,
+        PURPLE,
+        RED
         // ...
     }
 }

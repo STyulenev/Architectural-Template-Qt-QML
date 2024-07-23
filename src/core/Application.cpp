@@ -1,6 +1,6 @@
 #include <Application.h>
 
-namespace Core {
+namespace ATQQ::Core {
 
 Application::Application(int& argc, char** argv) :
     QGuiApplication(argc, argv)
@@ -19,4 +19,4 @@ auto Application::launch() -> void
     // ...
 }
 
-} // namespace Core
+} // namespace ATQQ::Core

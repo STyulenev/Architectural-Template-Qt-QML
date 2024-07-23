@@ -11,5 +11,5 @@ Template.ApplicationWindow {
         visible: false
     } // Item
 
-    color: "grey" //Common.Colors.currentTheme.mainBackgroundColor
+    color: Common.Colors.currentTheme.mainBackgroundColor
 } // Template.ApplicationWindow

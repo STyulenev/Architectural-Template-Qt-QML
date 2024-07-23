@@ -45,7 +45,7 @@ Forms.BaseForm {
             Layout.fillHeight: true
             Layout.fillWidth: true
 
-            focusPolicy: Qt.TabFocus
+            //enabled: false
 
             text: "Right Button"
 
