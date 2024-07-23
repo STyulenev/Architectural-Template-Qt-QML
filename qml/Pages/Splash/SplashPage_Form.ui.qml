@@ -5,10 +5,10 @@ import QtQuick.Layouts 1.15
 import Forms 1.0 as Forms
 
 Forms.BaseForm {
-    id: formSplashScreen
-    screenName: "SplashScreen"
+    id: formSplashPage
+    pageName: ""
 
-    signal splashScreenClicked()
+    signal splashPageClicked()
 
     content: Label {
         id: greetingLabel
@@ -29,7 +29,7 @@ Forms.BaseForm {
                 target: mouseArea
 
                 function onClicked() {
-                    formSplashScreen.splashScreenClicked();
+                    formSplashPage.splashPageClicked();
                 }
             } // Connections
         } // MouseArea

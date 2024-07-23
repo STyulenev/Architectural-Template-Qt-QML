@@ -1,8 +1,8 @@
 import QtQuick 2.15
 
-AuthenticationScreen_Form {
-    id: formAuthenticationScreen
-    objectName: "AuthenticationScreen"
+AuthenticationPage_Form {
+    id: formAuthenticationPage
+    objectName: "AuthenticationPage"
 
     Component.onCompleted: {
         applicationWindow.headerVisible = true;
@@ -13,6 +13,6 @@ AuthenticationScreen_Form {
     }
 
     onRightButtonClicked: {
-
+        // code
     }
-} // AuthenticationScreen_Form
+} // AuthenticationPage_Form

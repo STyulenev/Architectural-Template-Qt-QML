@@ -1,0 +1,12 @@
+###################################################################
+#
+# Модуль с страницами для StackView
+#
+###################################################################
+
+module Pages
+
+PageLoader 1.0 PageLoader.qml
+
+AuthenticationPage 1.0 Login/AuthenticationPage.qml
+SplashPage         1.0 Splash/SplashPage.qml

@@ -32,8 +32,6 @@ Forms.BaseForm {
             Layout.fillHeight: true
             Layout.fillWidth: true
 
-            text: "Left Button"
-
             onClicked: {
                 twoButtonsForm.leftButtonClicked();
             }
@@ -44,10 +42,6 @@ Forms.BaseForm {
 
             Layout.fillHeight: true
             Layout.fillWidth: true
-
-            //enabled: false
-
-            text: "Right Button"
 
             onClicked: {
                 twoButtonsForm.rightButtonClicked();
