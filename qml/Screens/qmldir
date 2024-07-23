@@ -1,0 +1,13 @@
+#####################################################
+#
+# Модуль с экранами
+#
+#####################################################
+
+module Screens
+
+ScreenLoader 1.0 ScreenLoader.qml
+
+AuthenticationScreen 1.0 Login/AuthenticationScreen.qml
+
+SplashScreen 1.0 Splash/SplashScreen.qml

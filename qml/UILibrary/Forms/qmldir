@@ -1,0 +1,12 @@
+#####################################################
+#
+# Модуль с шаблонными формами для экранов
+#
+#####################################################
+
+module Forms
+
+BaseForm 1.0 BaseForm.qml
+TwoButtonsForm 1.0 TwoButtonsForm.qml
+
+designersupported
