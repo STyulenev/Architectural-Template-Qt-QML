@@ -1,12 +1,15 @@
-#include <QGuiApplication>
 #include <QQmlApplicationEngine>
+
+#include "Application.h"
 
 auto main(int argc, char* argv[]) -> int
 {
-    QGuiApplication app(argc, argv);
+    Core::Application app(argc, argv);
+    app.launch();
 
     QQmlApplicationEngine engine;
     engine.addImportPath("qrc:/qml");
+    engine.addImportPath("qrc:/qml/Styles");
     engine.addImportPath("qrc:/qml/UILibrary");
 
     const QUrl url("qrc:/main.qml");

@@ -10,4 +10,4 @@ Forms.TwoButtonsForm {
     content: Item {
 
     }
-}
+} // Forms.TwoButtonsForm

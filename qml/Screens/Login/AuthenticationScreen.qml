@@ -9,10 +9,10 @@ AuthenticationScreen_Form {
     }
 
     onLeftButtonClicked: {
-
+        back();
     }
 
     onRightButtonClicked: {
 
     }
-}
+} // AuthenticationScreen_Form

@@ -7,7 +7,7 @@ Item {
 
     required property string screenName
 
-    signal exit()
+    signal back()
     signal next(Component screen)
     // дополнительные сигналы для логики перехода
 

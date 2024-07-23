@@ -6,4 +6,7 @@
 
 module Common
 
+singleton Colors 1.0 Colors.qml
 singleton Consts 1.0 Consts.qml
+singleton Enums  1.0 Enums.qml
+singleton Fonts  1.0 Fonts.qml

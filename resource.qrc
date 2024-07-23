@@ -1,16 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>qml/Common/Consts.qml</file>
-        <file>qml/Common/qmldir</file>
-        <file>qml/Screens/qmldir</file>
-        <file>qml/Screens/ScreenLoader.qml</file>
-        <file>qml/Screens/Login/AuthenticationScreen.qml</file>
-        <file>qml/Screens/Login/AuthenticationScreen_Form.ui.qml</file>
-        <file>qml/Screens/Splash/SplashScreen.qml</file>
-        <file>qml/Screens/Splash/SplashScreen_Form.ui.qml</file>
-        <file>qml/UILibrary/Forms/BaseForm.qml</file>
-        <file>qml/UILibrary/Forms/qmldir</file>
-        <file>qml/UILibrary/Forms/TwoButtonsForm.qml</file>
+        <file>res/fonts/Helvetica.ttf</file>
     </qresource>
 </RCC>

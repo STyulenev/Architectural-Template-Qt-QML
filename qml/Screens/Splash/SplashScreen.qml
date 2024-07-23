@@ -11,10 +11,14 @@ SplashScreen_Form {
 
         Screens.ScreenLoader {
             screen: Screens.AuthenticationScreen { }
-        }
-    }
+        } // Screens.ScreenLoader
+    } // Component
 
     onSplashScreenClicked: {
         next(componentAuthenticationScreen);
     }
-}
+
+    onUpdate: {
+        applicationWindow.headerVisible = false;
+    }
+} // SplashScreen_Form

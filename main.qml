@@ -56,7 +56,7 @@ ApplicationWindow {
         Connections {
             target: contentFrame.currentItem
 
-            function onExit() {
+            function onBack() {
                 contentFrame.pop();
             }
 
@@ -65,7 +65,6 @@ ApplicationWindow {
             }
 
             // дополнительные функции перехода
-
         }
     }
 }

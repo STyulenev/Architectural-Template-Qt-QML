@@ -11,7 +11,7 @@ Forms.BaseForm {
     signal splashScreenClicked()
 
     content: Label {
-        id: buttonRow
+        id: greetingLabel
 
         anchors.fill: parent
 
@@ -31,7 +31,7 @@ Forms.BaseForm {
                 function onClicked() {
                     formSplashScreen.splashScreenClicked();
                 }
-            }
-        }
-    }
-}
+            } // Connections
+        } // MouseArea
+    } // Label
+} // Forms.BaseForm
