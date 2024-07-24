@@ -1,6 +1,6 @@
 pragma Singleton
 
-import QtQuick 2.11
+import QtQuick 2.15
 
 QtObject {
     id: enums
@@ -12,4 +12,6 @@ QtObject {
         RED
         // ...
     }
+
+    // ...
 } // QtObject

@@ -1,5 +1,6 @@
 import QtQuick 2.15
 
+import Logic 1.0 as Logic
 import Pages 1.0 as Pages
 
 AuthenticationPage_Form {
@@ -22,10 +23,16 @@ AuthenticationPage_Form {
     }
 
     onRightButtonClicked: {
-        if (true) { // stub
+        if (Logic.Functions.checkString(username)) {
+            console.log("--->")
+        } else {
+            console.log("!--->")
+        }
+
+        /*if (true) { // stub
             next(componentMainMenuPage);
         } else {
             // code
-        }
+        }*/
     }
 } // AuthenticationPage_Form

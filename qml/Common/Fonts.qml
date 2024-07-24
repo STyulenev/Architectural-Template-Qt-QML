@@ -1,6 +1,6 @@
 pragma Singleton
 
-import QtQuick 2.11
+import QtQuick 2.15
 
 QtObject {
     id: fonts
@@ -15,4 +15,6 @@ QtObject {
 
     // Основные размеры шрифтов
     readonly property int mainPixelSize: 22 //* Consts.fontSize
+
+    // ...
 } // QtObject

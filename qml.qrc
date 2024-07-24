@@ -27,5 +27,9 @@
         <file>qml/Styles/Themes/RedTheme.qml</file>
         <file>qml/Pages/Menu/MainMenuPage.qml</file>
         <file>qml/Pages/Menu/MainMenuPage_Form.ui.qml</file>
+        <file>qml/Common/RegExps.qml</file>
+        <file>qml/Logic/Functions.js</file>
+        <file>qml/Logic/qmldir</file>
+        <file>qml/Styles/ATQQStyle/TextField.qml</file>
     </qresource>
 </RCC>

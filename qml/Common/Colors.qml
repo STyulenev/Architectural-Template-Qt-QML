@@ -1,6 +1,6 @@
 pragma Singleton
 
-import QtQuick 2.11
+import QtQuick 2.15
 
 import Common 1.0 as Common
 import Themes 1.0 as Themes
@@ -8,7 +8,7 @@ import Themes 1.0 as Themes
 QtObject {
     id: colors
 
-    // Временный флаг смена темы
+    // Флаг смена темы
     property int theme: Common.Enums.Themes.RED
 
     // Список существующих тем
@@ -26,7 +26,7 @@ QtObject {
             case Common.Enums.Themes.RED:
                 return colors.redTheme;
             default:
-                // error
+                // ошибка
         }
     }
 
@@ -35,5 +35,5 @@ QtObject {
         readonly property color blackColor: "#000000"
 
         // ...
-    }
+    } // QtObject
 } // QtObject
