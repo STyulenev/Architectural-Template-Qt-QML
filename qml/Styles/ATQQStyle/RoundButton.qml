@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Templates 2.15 as Template
-//import QtQuick.Controls.impl 2.15
+import QtQuick.Controls.impl 2.15
 
 import Common 1.0 as Common
 
@@ -54,7 +54,7 @@ Template.RoundButton {
         anchors.fill: parent
 
         radius: roundButton.radius
-        color: roundButton.pressed ? roundButton.palette.highlight : roundButton.palette.button
+        color: roundButton.pressed ? palette.highlight : palette.button
 
         border {
             color: roundButton.enabled ? Common.Colors.currentTheme.mainThemeColor : Common.Colors.currentTheme.disabledButtonColor

@@ -25,7 +25,7 @@ Item {
             fill: parent
             topMargin: 50
         }
-    }
+    } // Item
 
     Item {
         id: footerArea
@@ -37,5 +37,5 @@ Item {
             left: parent.left
             right: parent.right
         }
-    }
-}
+    } // Item
+} // Item

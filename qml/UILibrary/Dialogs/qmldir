@@ -1,0 +1,15 @@
+###################################################################
+#
+# Модуль с диалоговыми окнами
+#
+###################################################################
+
+module Dialogs
+
+internal AbstractDialog AbstractDialog.qml
+
+DialogLoader 1.0 DialogLoader.qml
+
+WarningDialog 1.0 WarningDialog.qml
+
+designersupported

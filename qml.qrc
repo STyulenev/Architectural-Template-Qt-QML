@@ -31,5 +31,9 @@
         <file>qml/Logic/Functions.js</file>
         <file>qml/Logic/qmldir</file>
         <file>qml/Styles/ATQQStyle/TextField.qml</file>
+        <file>qml/UILibrary/Dialogs/AbstractDialog.qml</file>
+        <file>qml/UILibrary/Dialogs/DialogLoader.qml</file>
+        <file>qml/UILibrary/Dialogs/qmldir</file>
+        <file>qml/UILibrary/Dialogs/WarningDialog.qml</file>
     </qresource>
 </RCC>

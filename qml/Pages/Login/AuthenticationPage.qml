@@ -1,5 +1,6 @@
 import QtQuick 2.15
 
+import Dialogs 1.0 as Dialogs
 import Logic 1.0 as Logic
 import Pages 1.0 as Pages
 
@@ -7,10 +8,22 @@ AuthenticationPage_Form {
     id: formAuthenticationPage
 
     Component {
+        id: dialogInputError
+
+        Dialogs.DialogLoader {
+            dialog: Dialogs.WarningDialog {
+                title: qsTr("Ошибка в имени пользователя и/или пароле.")
+            } // Dialogs.WarningDialog
+        } // Dialogs.DialogLoader
+    } // Component
+
+    Component {
         id: componentMainMenuPage
 
         Pages.PageLoader {
-            page: Pages.MainMenuPage { }
+            page: Pages.MainMenuPage {
+                // ...
+            } // Pages.MainMenuPage
         } // Pages.PageLoader
     } // Component
 
@@ -23,16 +36,14 @@ AuthenticationPage_Form {
     }
 
     onRightButtonClicked: {
-        if (Logic.Functions.checkString(username)) {
-            console.log("--->")
+        if (Logic.Functions.checkString(username) && Logic.Functions.checkString(password)) {
+            if (true) { // stub
+                next(componentMainMenuPage);
+            } else {
+                dialogInputError.createObject(formAuthenticationPage);
+            }
         } else {
-            console.log("!--->")
+            dialogInputError.createObject(formAuthenticationPage);
         }
-
-        /*if (true) { // stub
-            next(componentMainMenuPage);
-        } else {
-            // code
-        }*/
     }
 } // AuthenticationPage_Form
