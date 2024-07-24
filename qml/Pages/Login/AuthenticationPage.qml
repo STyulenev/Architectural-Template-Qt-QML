@@ -4,8 +4,12 @@ import Dialogs 1.0 as Dialogs
 import Logic 1.0 as Logic
 import Pages 1.0 as Pages
 
+import organization.com 1.0 as ViewModels
+
 AuthenticationPage_Form {
     id: formAuthenticationPage
+
+    property QtObject authenticationViewModel: ViewModels.AuthenticationViewModel { }
 
     Component {
         id: dialogInputError
@@ -37,7 +41,7 @@ AuthenticationPage_Form {
 
     onRightButtonClicked: {
         if (Logic.Functions.checkString(username) && Logic.Functions.checkString(password)) {
-            if (true) { // stub
+            if (authenticationViewModel.checkUsernameNPassword(username, password)) {
                 next(componentMainMenuPage);
             } else {
                 dialogInputError.createObject(formAuthenticationPage);

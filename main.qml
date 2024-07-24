@@ -23,18 +23,18 @@ ApplicationWindow {
     header: Rectangle {
         id: screenHeader
 
-        height: applicationWindow.headerVisible ? 40 : 0
+        height: applicationWindow.headerVisible ? 50 : 0
         visible: applicationWindow.headerVisible
 
         color: "green"
 
-        Text {
+        Label {
             id: name
 
             anchors.centerIn: parent
             text: contentFrame.currentItem.pageName ? contentFrame.currentItem.pageName : ""
-        }
-    }
+        } // Label
+    } // Rectangle
 
     StackView {
         id: contentFrame
