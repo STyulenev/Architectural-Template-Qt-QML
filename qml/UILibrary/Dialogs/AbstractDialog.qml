@@ -1,5 +1,5 @@
 import QtQuick 2.11
-import QtQuick.Window 2.11
+import QtQuick.Window 2.11 as QtQuickWindow
 
 import Common 1.0 as Common
 
@@ -12,11 +12,11 @@ Window {
     flags: Qt.Popup
     modality: Qt.WindowModal
 
-    width: 500 //* Common.Consts.xCoord
-    height: 250 //* Common.Consts.yCoord
+    width: 500 * Common.Consts.xCoord
+    height: 250 * Common.Consts.yCoord
 
-    x: Screen.width / 2 - root.width / 2
-    y: Screen.height / 2 - root.height / 2
+    x: QtQuickWindow.Screen.width / 2 - root.width / 2
+    y: QtQuickWindow.Screen.height / 2 - root.height / 2
 
     property alias content: bodyItem.children
 
@@ -29,7 +29,7 @@ Window {
 
         border {
             color: Common.Colors.currentTheme.mainThemeColor
-            width: 2 //* Common.Consts.radialSize
+            width: Common.Consts.mainRadiusComponent
         }
-    }
-}
+    } // Rectangle
+} // Window

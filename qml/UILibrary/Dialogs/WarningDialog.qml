@@ -14,10 +14,10 @@ AbstractDialog {
 
         anchors {
             fill: parent
-            margins: 20 //* Common.Consts.radialSize
+            margins: 20 * Common.Consts.radialSize
         }
 
-        spacing: 20 //* Common.Consts.yCoord
+        spacing: 20 * Common.Consts.yCoord
 
         Label {
             id: label
@@ -35,11 +35,11 @@ AbstractDialog {
             id: buttonLayout
 
             Layout.fillWidth: true
-            Layout.preferredHeight: 50 //* Common.Consts.yCoord
-            Layout.maximumHeight: 50 //* Common.Consts.yCoord
+            Layout.preferredHeight: 50 * Common.Consts.yCoord
+            Layout.maximumHeight: 50 * Common.Consts.yCoord
             Layout.alignment: Qt.AlignBottom
 
-            spacing: 10 //* Common.Consts.xCoord
+            spacing: 10 * Common.Consts.xCoord
 
             Item {
                 Layout.fillHeight: true

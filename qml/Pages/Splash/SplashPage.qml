@@ -1,4 +1,4 @@
-import QtQuick 2.15
+import QtQuick 2.11
 
 import Pages 1.0 as Pages
 
@@ -9,7 +9,9 @@ SplashPage_Form {
         id: componentAuthenticationPage
 
         Pages.PageLoader {
-            page: Pages.AuthenticationPage { }
+            page: Pages.AuthenticationPage {
+                // ...
+            } // Pages.AuthenticationPage
         } // Pages.PageLoader
     } // Component
 

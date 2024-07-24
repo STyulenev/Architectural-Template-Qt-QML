@@ -1,8 +1,8 @@
 import QtQuick 2.11
-import QtQuick.Controls 2.4
+import QtQuick.Controls 2.11
 import QtQuick.Layouts 1.11
 
-//import Common 1.0 as Common
+import Common 1.0 as Common
 import Forms 1.0 as Forms
 
 Forms.BaseForm {
@@ -21,10 +21,10 @@ Forms.BaseForm {
 
         anchors {
             fill: parent
-            margins: 10
+            margins: 10 * Common.Consts.radialSize
         }
 
-        spacing: 10
+        spacing: 10 * Common.Consts.xCoord
 
         RoundButton {
             id: leftButton
@@ -35,7 +35,7 @@ Forms.BaseForm {
             onClicked: {
                 twoButtonsForm.leftButtonClicked();
             }
-        }
+        } // RoundButton
 
         RoundButton {
             id: rightButton
@@ -46,6 +46,6 @@ Forms.BaseForm {
             onClicked: {
                 twoButtonsForm.rightButtonClicked();
             }
-        }
-    }
-}
+        } // RoundButton
+    } // RowLayout
+} // Forms.BaseForm

@@ -1,4 +1,4 @@
-import QtQuick 2.15
+import QtQuick 2.11
 
 AbstractTheme {
     id: blueTheme
@@ -23,4 +23,4 @@ AbstractTheme {
     textFieldFocusedColor: "#039ED3"
 
     // другие цвета ...
-}
+} // AbstractTheme

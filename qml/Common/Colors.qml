@@ -1,6 +1,6 @@
 pragma Singleton
 
-import QtQuick 2.15
+import QtQuick 2.11
 
 import Common 1.0 as Common
 import Themes 1.0 as Themes

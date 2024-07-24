@@ -1,6 +1,6 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Window 2.15
+import QtQuick 2.11
+import QtQuick.Controls 2.11
+import QtQuick.Window 2.11
 
 import Common 1.0 as Common
 
@@ -23,7 +23,7 @@ ApplicationWindow {
     header: Rectangle {
         id: screenHeader
 
-        height: applicationWindow.headerVisible ? 50 : 0
+        height: applicationWindow.headerVisible ? 50 * Common.Consts.yCoord : 0
         visible: applicationWindow.headerVisible
 
         color: "green"
@@ -67,6 +67,6 @@ ApplicationWindow {
             }
 
             // дополнительные функции перехода между страницами
-        }
+        } // Connections
     } // StackView
 } // ApplicationWindow

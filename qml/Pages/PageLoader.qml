@@ -1,5 +1,5 @@
-import QtQml 2.15
-import QtQuick 2.15
+import QtQml 2.11
+import QtQuick 2.11
 
 Loader {
     id: loader
@@ -13,6 +13,7 @@ Loader {
     // дополнительные сигналы для логики перехода между страницами
 
     asynchronous: true
+    visible: status == Loader.Ready
 
     onLoaded: {
         loader.item.view ? loader.item.view.visibleChanged(true) : { };

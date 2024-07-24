@@ -1,4 +1,4 @@
-import QtQuick 2.15
+import QtQuick 2.11
 
 import Dialogs 1.0 as Dialogs
 import Logic 1.0 as Logic

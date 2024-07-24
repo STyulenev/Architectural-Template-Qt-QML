@@ -1,6 +1,8 @@
-import QtQml 2.15
-import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQml 2.11
+import QtQuick 2.11
+import QtQuick.Controls 2.11
+
+import Common 1.0 as Common
 
 Item {
     id: root
@@ -23,14 +25,14 @@ Item {
 
         anchors {
             fill: parent
-            topMargin: 50
+            topMargin: 50 * Common.Consts.yCoord
         }
     } // Item
 
     Item {
         id: footerArea
 
-        height: root.footerEnabled ? 100 : 0
+        height: root.footerEnabled ? 100 * Common.Consts.yCoord : 0
 
         anchors {
             bottom: parent.bottom

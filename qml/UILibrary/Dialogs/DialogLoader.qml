@@ -6,6 +6,7 @@ Loader {
     property alias dialog: loader.sourceComponent
 
     asynchronous: true
+    visible: status == Loader.Ready
 
     onLoaded: {
         item.show();

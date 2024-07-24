@@ -1,6 +1,6 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.15
+import QtQuick 2.11
+import QtQuick.Controls 2.11
+import QtQuick.Layouts 1.11
 
 import Common 1.0 as Common
 import Forms 1.0 as Forms
@@ -15,6 +15,13 @@ Forms.TwoButtonsForm {
     property alias username: usernameTextField.text
     property alias password: passwordTextField.text
 
+    QtObject {
+        id: internal
+
+        readonly property int height: 50 * Common.Consts.yCoord
+        readonly property int width:  100 * Common.Consts.xCoord
+    } // QtObject
+
     content: GridLayout {
         id: body
 
@@ -26,8 +33,8 @@ Forms.TwoButtonsForm {
         Label {
             id: usernameLabel
 
-            Layout.preferredHeight: 50
-            Layout.preferredWidth: 100
+            Layout.preferredHeight: internal.height
+            Layout.preferredWidth: internal.width
 
             horizontalAlignment: Qt.AlignLeft
             verticalAlignment: Qt.AlignVCenter
@@ -38,8 +45,8 @@ Forms.TwoButtonsForm {
         TextField {
             id: usernameTextField
 
-            Layout.preferredHeight: 50
-            Layout.preferredWidth: 200
+            Layout.preferredHeight: internal.height
+            Layout.preferredWidth: 2 * internal.width
 
             validator: Common.RegExps.onlyLetters
         } // TextField
@@ -48,8 +55,8 @@ Forms.TwoButtonsForm {
             id: passwordLabel
 
             Layout.row: 1
-            Layout.preferredHeight: 50
-            Layout.preferredWidth: 100
+            Layout.preferredHeight: internal.height
+            Layout.preferredWidth: internal.width
             horizontalAlignment: Qt.AlignLeft
             verticalAlignment: Qt.AlignVCenter
 
@@ -59,8 +66,8 @@ Forms.TwoButtonsForm {
         TextField {
             id: passwordTextField
 
-            Layout.preferredHeight: 50
-            Layout.preferredWidth: 200
+            Layout.preferredHeight: internal.height
+            Layout.preferredWidth: 2 * internal.width
 
             validator: Common.RegExps.onlyNumbers
         } // TextField

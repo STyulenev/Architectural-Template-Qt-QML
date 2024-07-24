@@ -26,4 +26,4 @@ QtObject {
     property color textFieldFocusedColor
 
     // другие цвета ...
-}
+} // QtObject
