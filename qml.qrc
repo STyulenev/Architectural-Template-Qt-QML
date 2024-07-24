@@ -25,5 +25,7 @@
         <file>qml/Styles/Themes/BlueTheme.qml</file>
         <file>qml/Styles/Themes/PurpleTheme.qml</file>
         <file>qml/Styles/Themes/RedTheme.qml</file>
+        <file>qml/Pages/Menu/MainMenuPage.qml</file>
+        <file>qml/Pages/Menu/MainMenuPage_Form.ui.qml</file>
     </qresource>
 </RCC>

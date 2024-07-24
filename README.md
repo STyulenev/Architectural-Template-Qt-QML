@@ -1,2 +1,13 @@
 # Architectural-Template-Qt-QML
-An example architectural template for a multi-page GUI application using Qt/QML
+Пример архитектурного шаблона для многостраничного приложения с графическим интерфейсом, использующего Qt/QML.
+
+## Добавление новых языков
+
+В корне папки выполняем команду, с нужным языковым кодом (например, es_ES - Испанский):
+```shell
+lupdate * -ts res/languages/ATQQ_es_ES.ts
+```
+далее требуется открыть данный файл утилитой и вставить перевод.
+```shell
+linguist
+```

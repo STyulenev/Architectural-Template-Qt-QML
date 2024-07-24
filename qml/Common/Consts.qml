@@ -7,4 +7,4 @@ QtObject {
     readonly property int screenHeight: 600
 
     readonly property int mainRadiusComponent: 5
-}
+} // QtObject

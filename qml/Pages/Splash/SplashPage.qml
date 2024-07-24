@@ -4,7 +4,6 @@ import Pages 1.0 as Pages
 
 SplashPage_Form {
     id: formSplashPage
-    objectName: "SplashPage"
 
     Component {
         id: componentAuthenticationPage

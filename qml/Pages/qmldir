@@ -9,4 +9,5 @@ module Pages
 PageLoader 1.0 PageLoader.qml
 
 AuthenticationPage 1.0 Login/AuthenticationPage.qml
+MainMenuPage       1.0 Menu/MainMenuPage.qml
 SplashPage         1.0 Splash/SplashPage.qml

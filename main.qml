@@ -38,7 +38,6 @@ ApplicationWindow {
 
     StackView {
         id: contentFrame
-        objectName: "BaseStackView"
 
         anchors.fill: parent
 

@@ -9,10 +9,10 @@ QtObject {
         id: helvetica
 
         source: "qrc:/res/fonts/Helvetica.ttf"
-    }
+    } // FontLoader
 
     readonly property alias family: helvetica.name
 
     // Основные размеры шрифтов
     readonly property int mainPixelSize: 22 //* Consts.fontSize
-}
+} // QtObject
