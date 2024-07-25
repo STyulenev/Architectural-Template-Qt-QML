@@ -8,11 +8,11 @@ QtObject {
 	
     property QtObject onlyNumbers: RegularExpressionValidator {
         regularExpression: /^\d+$/
-    } // QtObject
+    } // RegularExpressionValidator
 
     property QtObject onlyLetters: RegularExpressionValidator {
         regularExpression: /^[a-zA-Z]+$/
-    } // QtObject
+    } // RegularExpressionValidator
 
     // ...
 } // QtObject

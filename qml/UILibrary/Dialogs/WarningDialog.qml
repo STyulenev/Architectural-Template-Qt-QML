@@ -53,7 +53,6 @@ AbstractDialog {
                 Layout.fillWidth: true
 
                 text: qsTr("Ок")
-                enabled: true
 
                 onClicked: {
                     warningDialog.closeDialog();
