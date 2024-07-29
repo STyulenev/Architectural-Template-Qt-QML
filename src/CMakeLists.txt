@@ -6,6 +6,7 @@ project(Source
     LANGUAGES CXX
 )
 
+add_subdirectory(controller)
 add_subdirectory(core)
 add_subdirectory(view-model)
 # ...

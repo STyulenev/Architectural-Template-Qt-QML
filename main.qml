@@ -4,6 +4,8 @@ import QtQuick.Window 2.11
 
 import Common 1.0 as Common
 
+import organization.com 1.0 as ViewModels
+
 ApplicationWindow {
     id: applicationWindow
 
@@ -19,6 +21,7 @@ ApplicationWindow {
     title: qsTr("Architectural-Template-Qt-QML")
 
     property bool headerVisible: false
+    property QtObject topPanelViewModel: ViewModels.TopPanelViewModel { }
 
     header: Rectangle {
         id: screenHeader

@@ -21,6 +21,8 @@ add_subdirectory(src)
 
 set(PROJECT_SOURCES
     main.cpp
+
+    ${APP_RES}
     resource.qrc
     qml.qrc
 )

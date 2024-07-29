@@ -6,17 +6,17 @@
     <message>
         <location filename="../../qml/Pages/Login/AuthenticationPage_Form.ui.qml" line="8"/>
         <source>Страница аутентификации</source>
-        <translation type="unfinished"></translation>
+        <translation>Страница аутентификации</translation>
     </message>
     <message>
         <location filename="../../qml/Pages/Login/AuthenticationPage_Form.ui.qml" line="10"/>
         <source>Назад</source>
-        <translation type="unfinished"></translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <location filename="../../qml/Pages/Login/AuthenticationPage_Form.ui.qml" line="11"/>
         <source>Вход</source>
-        <translation type="unfinished"></translation>
+        <translation>Вход</translation>
     </message>
 </context>
 <context>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../../qml/Pages/Splash/SplashPage_Form.ui.qml" line="21"/>
         <source>Приветствие...</source>
-        <translation type="unfinished"></translation>
+        <translation>Приветствие...</translation>
     </message>
 </context>
 <context>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../../main.qml" line="19"/>
         <source>Architectural-Template-Qt-QML</source>
-        <translation type="unfinished"></translation>
+        <translation>Архитектурный-шаблон-Qt-QML</translation>
     </message>
 </context>
 </TS>
