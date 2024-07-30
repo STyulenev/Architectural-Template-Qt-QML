@@ -18,7 +18,7 @@ ApplicationWindow {
     minimumHeight: height
     minimumWidth: width
 
-    title: qsTr("Architectural-Template-Qt-QML")
+    title: "Architectural-Template-Qt-QML"
 
     property bool headerVisible: false
     property QtObject topPanelViewModel: ViewModels.TopPanelViewModel { }
@@ -44,7 +44,9 @@ ApplicationWindow {
 
         anchors.fill: parent
 
-        Component.onCompleted: contentFrame.push("qrc:/qml/Pages/Splash/SplashPage.qml")
+        Component.onCompleted: {
+            contentFrame.push("qrc:/qml/Pages/Splash/SplashPage.qml");
+        }
 
         pushEnter: null
         pushExit: null

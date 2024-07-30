@@ -8,10 +8,19 @@ if(NOT TARGET Qt${QT_VERSION_MAJOR}::lconvert)
     message(FATAL_ERROR "The package \"Qt${QT_VERSION_MAJOR}LinguistTools\" is required.")
 endif()
 
-file(GLOB TS_FILES "res/languages/*.ts")
+file(GLOB TS_FILES "${CMAKE_SOURCE_DIR}/res/languages/*.ts")
 
 foreach(TS_FILE ${TS_FILES})
-    execute_process(COMMAND lupdate -recursive ${PROJECT_SOURCE_DIR} -ts ${TS_FILE})
+
+    if(WIN32)
+        # В Windows QT_UTILITY_PATH может быть пустым
+        execute_process(COMMAND C:/Qt/6.6.3/mingw_64/bin/lupdate -noobsolete -recursive ${PROJECT_SOURCE_DIR} -ts ${TS_FILE})
+    elseif(UNIX)
+        execute_process(COMMAND ${QT_UTILITY_PATH}lupdate -noobsolete -recursive ${PROJECT_SOURCE_DIR} -ts ${TS_FILE})
+    else()
+        message(FATAL_ERROR "The lupdate path is required.")
+    endif()
+
 endforeach()
 
 if(QT_VERSION VERSION_LESS 5.15.0)

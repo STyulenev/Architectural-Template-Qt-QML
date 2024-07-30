@@ -19,6 +19,9 @@ public slots:
 private:
     auto switchTranslator() -> void;
 
+signals:
+    auto languageChanged() -> void;
+
 private:
     QTranslator* m_translator;
     QString m_currLang;

@@ -1,6 +1,11 @@
 #pragma once
 
 #include <QGuiApplication>
+#include <QQmlApplicationEngine>
+
+namespace ATQQ::Controllers {
+    class LanguageController;
+} // namespace ATQQ::Controllers
 
 namespace ATQQ::Core {
 
@@ -13,6 +18,14 @@ public:
     ~Application();
 
     auto launch() -> void;
+    auto setEngine(QQmlApplicationEngine* newEngine) -> void;
+
+private slots:
+    auto engineRetranslate() -> void;
+
+private:
+    QQmlApplicationEngine* engine;
+    Controllers::LanguageController* languageController;
 
 };
 

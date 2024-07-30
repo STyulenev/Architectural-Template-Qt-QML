@@ -1,11 +1,17 @@
 #include <TopPanelViewModel.h>
 
+#include <QGuiApplication>
+
+#include "LanguageController.h"
+
 namespace ATQQ::ViewModels {
 
 TopPanelViewModel::TopPanelViewModel(QObject* parent) :
     QObject(parent)
 {
-    m_languageController = new Controllers::LanguageController(this);
+    m_languageController = qobject_cast<Controllers::LanguageController*>(qApp->property("LanguageController").value<QObject*>());
+
+    connect(m_languageController, &Controllers::LanguageController::languageChanged, this, &TopPanelViewModel::languageChanged);
 }
 
 TopPanelViewModel::~TopPanelViewModel()
@@ -21,8 +27,6 @@ auto TopPanelViewModel::getLanguage() -> const QString&
 auto TopPanelViewModel::setLanguage(const QString& language) -> void
 {
     m_languageController->setLanguage(language);
-
-    emit languageChanged();
 }
 
 } // namespace ATQQ::ViewModels

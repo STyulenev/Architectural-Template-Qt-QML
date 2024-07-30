@@ -5,12 +5,15 @@
 auto main(int argc, char* argv[]) -> int
 {
     ATQQ::Core::Application app(argc, argv);
-    app.launch();
+
 
     QQmlApplicationEngine engine;
     engine.addImportPath("qrc:/qml");
     engine.addImportPath("qrc:/qml/Styles");
     engine.addImportPath("qrc:/qml/UILibrary");
+
+    app.setEngine(&engine);
+    app.launch();
 
     QObject::connect(&engine, &QQmlApplicationEngine::quit, &QGuiApplication::quit);
 

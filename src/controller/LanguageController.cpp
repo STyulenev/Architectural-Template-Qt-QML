@@ -43,15 +43,9 @@ auto LanguageController::switchTranslator() -> void
     qApp->removeTranslator(m_translator);
 
     if (m_translator->load(QString(":/ATQQ_%1.qm").arg(m_currLang))) {
-        qApp->installTranslator(m_translator);
+        QCoreApplication::installTranslator(m_translator);
 
-        // QTBUG-102393 in 6.6.3
-        if (auto engine = qmlEngine(this)) {
-            //engine->markCurrentFunctionAsTranslationBinding();
-            engine->retranslate();
-        } else {
-            qDebug() << "Error";
-        }
+        emit languageChanged();
     } else {
         qDebug() << "Failed to load " << QString(":/ATQQ_%1.qm").arg(m_currLang);
     }

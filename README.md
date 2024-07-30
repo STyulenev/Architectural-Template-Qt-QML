@@ -11,3 +11,16 @@ lupdate * -ts res/languages/ATQQ_es_ES.ts
 ```shell
 linguist
 ```
+
+## Сборка с Docker
+
+1. Установить WSL2 и запустить VcXsrv Windows X Server (для ОС Windows).
+2. Указать ip в переменную IP_ADDRESS (для перенаправления GUI).
+3. Создать образ:
+```bash
+docker build  -t docker-gui -f .\deploy\Dockerfile-Qt-6-5 --build-arg IP_ADDRESS='your ip addres' .
+```
+4. Запуск контейнера:
+```bash
+docker run docker-gui
+```

@@ -1,7 +1,10 @@
 #pragma once
 
 #include <QObject>
-#include "LanguageController.h"
+
+namespace ATQQ::Controllers {
+    class LanguageController;
+} // namespace ATQQ::Controllers
 
 namespace ATQQ::ViewModels {
 
