@@ -24,7 +24,6 @@ Application::~Application()
 
 auto Application::launch() -> void
 {
-
     if (!engine) {
         qApp->exit(1);
     }

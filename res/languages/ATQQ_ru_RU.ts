@@ -56,6 +56,14 @@
     </message>
 </context>
 <context>
+    <name>SettingPage_Form.ui</name>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="10"/>
+        <source>Настройки</source>
+        <translation type="unfinished">Настройки</translation>
+    </message>
+</context>
+<context>
     <name>SplashPage_Form.ui</name>
     <message>
         <location filename="../../qml/Pages/Splash/SplashPage_Form.ui.qml" line="21"/>

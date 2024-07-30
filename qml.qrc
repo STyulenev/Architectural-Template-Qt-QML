@@ -1,39 +1,66 @@
 <RCC>
     <qresource prefix="/">
+
+        <!-- Основные файлы -->
         <file>main.qml</file>
-        <file>qml/Common/Consts.qml</file>
+        <file>qtquickcontrols2.conf</file>
+
+        <!-- Файлы с общими данными (константы, цвета, шрифты и т.д.) -->
         <file>qml/Common/qmldir</file>
+        <file>qml/Common/Consts.qml</file>
+        <file>qml/Common/Colors.qml</file>
+        <file>qml/Common/Fonts.qml</file>
+        <file>qml/Common/Enums.qml</file>
+        <file>qml/Common/RegExps.qml</file>
+
+        <!-- Внешнии модули -->
+        <file>qml/External/qmldir</file>
+        <!-- ... -->
+
+        <!-- Логика (js-функции) -->
+        <file>qml/Logic/Functions.js</file>
+        <file>qml/Logic/qmldir</file>
+
+        <!-- Модели -->
+        <file>qml/Models/qmldir</file>
+        <!-- ... -->
+
+        <!-- Страницы приложения -->
         <file>qml/Pages/qmldir</file>
         <file>qml/Pages/PageLoader.qml</file>
         <file>qml/Pages/Login/AuthenticationPage.qml</file>
         <file>qml/Pages/Login/AuthenticationPage_Form.ui.qml</file>
+        <file>qml/Pages/Menu/MainMenuPage.qml</file>
+        <file>qml/Pages/Menu/MainMenuPage_Form.ui.qml</file>
+        <file>qml/Pages/Setting/SettingPage.qml</file>
+        <file>qml/Pages/Setting/SettingPage_Form.ui.qml</file>
         <file>qml/Pages/Splash/SplashPage.qml</file>
         <file>qml/Pages/Splash/SplashPage_Form.ui.qml</file>
+
+        <!-- Шаблонные формы для страниц -->
         <file>qml/UILibrary/Forms/BaseForm.qml</file>
         <file>qml/UILibrary/Forms/qmldir</file>
         <file>qml/UILibrary/Forms/TwoButtonsForm.qml</file>
-        <file>qtquickcontrols2.conf</file>
+
+        <!-- Стилизация QQuick компонентов -->
+        <file>qml/Styles/ATQQStyle/qmldir</file>
         <file>qml/Styles/ATQQStyle/ApplicationWindow.qml</file>
         <file>qml/Styles/ATQQStyle/Label.qml</file>
         <file>qml/Styles/ATQQStyle/RoundButton.qml</file>
-        <file>qml/Styles/Themes/AbstractTheme.qml</file>
+        <file>qml/Styles/ATQQStyle/TextField.qml</file>
+
+        <!-- Темы -->
         <file>qml/Styles/Themes/qmldir</file>
-        <file>qml/Common/Colors.qml</file>
-        <file>qml/Common/Fonts.qml</file>
-        <file>qml/Common/Enums.qml</file>
-        <file>qml/Styles/ATQQStyle/qmldir</file>
+        <file>qml/Styles/Themes/AbstractTheme.qml</file>
         <file>qml/Styles/Themes/BlueTheme.qml</file>
         <file>qml/Styles/Themes/PurpleTheme.qml</file>
         <file>qml/Styles/Themes/RedTheme.qml</file>
-        <file>qml/Pages/Menu/MainMenuPage.qml</file>
-        <file>qml/Pages/Menu/MainMenuPage_Form.ui.qml</file>
-        <file>qml/Common/RegExps.qml</file>
-        <file>qml/Logic/Functions.js</file>
-        <file>qml/Logic/qmldir</file>
-        <file>qml/Styles/ATQQStyle/TextField.qml</file>
+
+        <!-- Диалоговые окна -->
+        <file>qml/UILibrary/Dialogs/qmldir</file>
         <file>qml/UILibrary/Dialogs/AbstractDialog.qml</file>
         <file>qml/UILibrary/Dialogs/DialogLoader.qml</file>
-        <file>qml/UILibrary/Dialogs/qmldir</file>
         <file>qml/UILibrary/Dialogs/WarningDialog.qml</file>
+
     </qresource>
 </RCC>
