@@ -3,6 +3,7 @@
 #include "QmlRegisterType.h"
 
 #include "LanguageController.h"
+#include "LoggingController.h"
 
 namespace ATQQ::Core {
 
@@ -23,9 +24,12 @@ Application::~Application()
 
 auto Application::launch() -> void
 {
+
     if (!engine) {
         qApp->exit(1);
     }
+
+    Controllers::LoggingController::instance()->setDebugMessageHandler();
 
     ViewModels::qmlRegisterTypes();
     // ...
