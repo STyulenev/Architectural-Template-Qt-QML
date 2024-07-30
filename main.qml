@@ -2,6 +2,8 @@ import QtQuick 2.11
 import QtQuick.Controls 2.11
 import QtQuick.Window 2.11
 
+import Qt.labs.settings 1.0 as QtLabsSettings
+
 import Common 1.0 as Common
 import Components 1.0 as Components
 
@@ -20,6 +22,17 @@ ApplicationWindow {
     title: "Architectural-Template-Qt-QML"
 
     property bool headerVisible: false
+
+    QtLabsSettings.Settings {
+        id: applicationWindowSettings
+
+        category: "General"
+
+        property alias x: applicationWindow.x
+        property alias y: applicationWindow.y
+        property alias width: applicationWindow.width
+        property alias height: applicationWindow.height
+    } // QtLabsSettings.Settings
 
     header: Components.TopPanel {
         id: topPanel

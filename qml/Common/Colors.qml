@@ -2,14 +2,13 @@ pragma Singleton
 
 import QtQuick 2.11
 
-import Common 1.0 as Common
 import Themes 1.0 as Themes
 
 QtObject {
     id: colors
 
     // Флаг смена темы
-    property int theme: Common.Enums.Themes.RED
+    property int theme: Enums.Themes.RED
 
     // Список существующих тем
     readonly property var blueTheme:   Themes.BlueTheme { }
@@ -19,11 +18,11 @@ QtObject {
     // Текущая тема
     readonly property Themes.AbstractTheme currentTheme: {
         switch (colors.theme) {
-            case Common.Enums.Themes.BLUE:
+            case Enums.Themes.BLUE:
                 return colors.blueTheme;
-            case Common.Enums.Themes.PURPLE:
+            case Enums.Themes.PURPLE:
                 return colors.purpleTheme;
-            case Common.Enums.Themes.RED:
+            case Enums.Themes.RED:
                 return colors.redTheme;
             default:
                 // ошибка
@@ -33,13 +32,13 @@ QtObject {
     function changeTheme(value) {
         switch (value) {
             case 0:
-                colors.theme = Common.Enums.Themes.BLUE;
+                colors.theme = Enums.Themes.BLUE;
                 break;
             case 1:
-                colors.theme = Common.Enums.Themes.PURPLE;
+                colors.theme = Enums.Themes.PURPLE;
                 break;
             case 2:
-                colors.theme = Common.Enums.Themes.RED;
+                colors.theme = Enums.Themes.RED;
                 break;
             default:
                 // ошибка
