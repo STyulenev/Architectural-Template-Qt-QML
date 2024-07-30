@@ -40,11 +40,13 @@
         <!-- Шаблонные формы для страниц -->
         <file>qml/UILibrary/Forms/BaseForm.qml</file>
         <file>qml/UILibrary/Forms/qmldir</file>
+        <file>qml/UILibrary/Forms/OneButtonForm.qml</file>
         <file>qml/UILibrary/Forms/TwoButtonsForm.qml</file>
 
         <!-- Стилизация QQuick компонентов -->
         <file>qml/Styles/ATQQStyle/qmldir</file>
         <file>qml/Styles/ATQQStyle/ApplicationWindow.qml</file>
+        <file>qml/Styles/ATQQStyle/ComboBox.qml</file>
         <file>qml/Styles/ATQQStyle/Label.qml</file>
         <file>qml/Styles/ATQQStyle/RoundButton.qml</file>
         <file>qml/Styles/ATQQStyle/TextField.qml</file>
@@ -61,6 +63,11 @@
         <file>qml/UILibrary/Dialogs/AbstractDialog.qml</file>
         <file>qml/UILibrary/Dialogs/DialogLoader.qml</file>
         <file>qml/UILibrary/Dialogs/WarningDialog.qml</file>
+
+        <!-- Пользовательские компоненты (виджеты) -->
+        <file>qml/UILibrary/Components/qmldir</file>
+        <file>qml/UILibrary/Components/TopPanel.qml</file>
+        <file>qml/UILibrary/Components/TopPanel_Form.ui.qml</file>
 
     </qresource>
 </RCC>

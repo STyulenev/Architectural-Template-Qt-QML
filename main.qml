@@ -3,8 +3,7 @@ import QtQuick.Controls 2.11
 import QtQuick.Window 2.11
 
 import Common 1.0 as Common
-
-import organization.com 1.0 as ViewModels
+import Components 1.0 as Components
 
 ApplicationWindow {
     id: applicationWindow
@@ -21,23 +20,15 @@ ApplicationWindow {
     title: "Architectural-Template-Qt-QML"
 
     property bool headerVisible: false
-    property QtObject topPanelViewModel: ViewModels.TopPanelViewModel { }
 
-    header: Rectangle {
-        id: screenHeader
+    header: Components.TopPanel {
+        id: topPanel
 
         height: applicationWindow.headerVisible ? 50 * Common.Consts.yCoord : 0
         visible: applicationWindow.headerVisible
 
-        color: "green"
-
-        Label {
-            id: name
-
-            anchors.centerIn: parent
-            text: contentFrame.currentItem.pageName ? contentFrame.currentItem.pageName : ""
-        } // Label
-    } // Rectangle
+        title: contentFrame.currentItem.pageName ? contentFrame.currentItem.pageName : ""
+    } // Components.TopPanel
 
     StackView {
         id: contentFrame

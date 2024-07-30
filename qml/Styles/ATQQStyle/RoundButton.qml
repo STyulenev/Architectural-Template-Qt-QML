@@ -1,5 +1,6 @@
 import QtQuick 2.11
 import QtQuick.Controls 2.11
+import QtQuick.Controls.Basic 2.11
 import QtQuick.Templates 2.11 as Template
 import QtQuick.Controls.impl 2.11
 
@@ -10,15 +11,6 @@ Template.RoundButton {
 
     radius: Common.Consts.mainRadiusComponent
     checkable: false
-
-    // QTBUG-85685
-    Component.onCompleted: {
-        palette.button = roundButton.enabled ?
-                    Common.Colors.currentTheme.mainBackgroundColor : Common.Colors.currentTheme.disabledButtonColor;
-
-        palette.highlight = roundButton.enabled ?
-                    Common.Colors.currentTheme.mainThemeColor : Common.Colors.currentTheme.disabledButtonColor;
-    }
 
     icon {
         color: roundButton.enabled ? "transparent" : Common.Colors.currentTheme.disabledButtonColor
@@ -54,7 +46,15 @@ Template.RoundButton {
         anchors.fill: parent
 
         radius: roundButton.radius
-        color: roundButton.pressed ? palette.highlight : palette.button
+        color: {
+            if (roundButton.pressed) {
+                return roundButton.enabled ?
+                            Common.Colors.currentTheme.mainThemeColor : Common.Colors.currentTheme.disabledButtonColor;
+            } else {
+                return roundButton.enabled ?
+                            Common.Colors.currentTheme.mainBackgroundColor : Common.Colors.currentTheme.disabledButtonColor;
+            }
+        }
 
         border {
             color: roundButton.enabled ? Common.Colors.currentTheme.mainThemeColor : Common.Colors.currentTheme.disabledButtonColor

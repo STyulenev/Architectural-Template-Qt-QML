@@ -30,6 +30,22 @@ QtObject {
         }
     }
 
+    function changeTheme(value) {
+        switch (value) {
+            case 0:
+                colors.theme = Common.Enums.Themes.BLUE;
+                break;
+            case 1:
+                colors.theme = Common.Enums.Themes.PURPLE;
+                break;
+            case 2:
+                colors.theme = Common.Enums.Themes.RED;
+                break;
+            default:
+                // ошибка
+        }
+    }
+
     // Постоянные цвета, для любой темы
     readonly property QtObject permanentСolors: QtObject {
         readonly property color blackColor: "#000000"

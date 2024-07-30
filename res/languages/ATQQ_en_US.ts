@@ -60,7 +60,47 @@
     <message>
         <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="10"/>
         <source>Настройки</source>
-        <translation type="unfinished">Settings</translation>
+        <translation>Settings</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="12"/>
+        <source>Назад</source>
+        <translation>Back</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="41"/>
+        <source>Тема:</source>
+        <translation>Theme:</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="50"/>
+        <source>Синяя</source>
+        <translation>Blue</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="50"/>
+        <source>Фиолетовая</source>
+        <translation>Purple</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="50"/>
+        <source>Красная</source>
+        <translation>Red</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="72"/>
+        <source>Язык:</source>
+        <translation>Language:</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="81"/>
+        <source>Русский</source>
+        <translation>Russian</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="81"/>
+        <source>Английский</source>
+        <translation>English</translation>
     </message>
 </context>
 <context>

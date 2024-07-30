@@ -1,4 +1,5 @@
 # Architectural-Template-Qt-QML
+
 Пример архитектурного шаблона для многостраничного приложения с графическим интерфейсом, использующего Qt/QML.
 
 ## Добавление новых языков
@@ -11,6 +12,22 @@ lupdate * -ts res/languages/ATQQ_es_ES.ts
 ```shell
 linguist
 ```
+
+## Сборка проекта
+
+Проект может быть собран из QtCreator или из папки build командами:
+
+### CMake:
+
+```bash
+cmake ..
+make
+```
+> Для debug - "cmake -DCMAKE_BUILD_TYPE=Debug ..", для release - "cmake -DCMAKE_BUILD_TYPE=Release .."
+
+### QMake:
+
+В данный момент сборка QMake отсутствует.
 
 ## Сборка с Docker
 

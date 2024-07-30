@@ -7,9 +7,9 @@ QtObject {
 
     // Перечисление для выбора темы
     enum Themes {
-        BLUE,
-        PURPLE,
-        RED
+        BLUE = 0,
+        PURPLE = 1,
+        RED = 2
         // ...
     }
 
