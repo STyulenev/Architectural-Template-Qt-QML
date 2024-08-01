@@ -6,7 +6,7 @@ import Common 1.0 as Common
 Rectangle {
     id: topPanel
 
-    color: "green"
+    color: Common.Colors.currentTheme.mainThemeColor
 
     property alias title: title.text
 

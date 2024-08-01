@@ -2,7 +2,7 @@ import QtQuick 2.11
 import QtQuick.Controls 2.11
 import QtQuick.Window 2.11
 
-import Qt.labs.settings 1.0 as QtLabsSettings
+import QtCore as QtCore
 
 import Common 1.0 as Common
 import Components 1.0 as Components
@@ -14,16 +14,16 @@ ApplicationWindow {
 
     width: Common.Consts.screenWidth
     height: Common.Consts.screenHeight
-    maximumHeight: height
+    /*maximumHeight: height
     maximumWidth: width
     minimumHeight: height
-    minimumWidth: width
+    minimumWidth: width*/
 
     title: "Architectural-Template-Qt-QML"
 
     property bool headerVisible: false
 
-    QtLabsSettings.Settings {
+    QtCore.Settings {
         id: applicationWindowSettings
 
         category: "General"
@@ -32,7 +32,7 @@ ApplicationWindow {
         property alias y: applicationWindow.y
         property alias width: applicationWindow.width
         property alias height: applicationWindow.height
-    } // QtLabsSettings.Settings
+    } // QtCore.Settings
 
     header: Components.TopPanel {
         id: topPanel

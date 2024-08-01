@@ -35,7 +35,7 @@ make
 2. Указать ip в переменную IP_ADDRESS (для перенаправления GUI).
 3. Создать образ:
 ```bash
-docker build  -t docker-gui -f .\deploy\Dockerfile-Qt-6-5 --build-arg IP_ADDRESS='your ip addres' .
+docker build -t docker-gui -f .\deploy\Dockerfile-Qt-6-5 --build-arg IP_ADDRESS='your ip addres' .
 ```
 4. Запуск контейнера:
 ```bash

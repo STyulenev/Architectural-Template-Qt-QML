@@ -19,7 +19,7 @@ Forms.TwoButtonsForm {
         id: internal
 
         readonly property int height: 50 * Common.Consts.yCoord
-        readonly property int width:  100 * Common.Consts.xCoord
+        readonly property int width:  200 * Common.Consts.xCoord
     } // QtObject
 
     content: GridLayout {

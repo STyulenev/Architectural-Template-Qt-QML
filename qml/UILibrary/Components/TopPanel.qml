@@ -1,5 +1,5 @@
 import QtQuick 2.11
-import Qt.labs.settings 1.0 as QtLabsSettings
+import QtCore as QtCore
 
 import Common 1.0 as Common
 
@@ -10,17 +10,19 @@ TopPanel_Form {
 
     property QtObject topPanelViewModel: ViewModels.TopPanelViewModel { }
 
-    QtLabsSettings.Settings {
+    QtCore.Settings {
         id: settings
 
-        category: "Style"
+        category: "UserData"
 
         property int theme: Common.Colors.theme
+        property string language: topPanelViewModel.language
         // ...
-    } // QtLabsSettings.Settings
+    } // QtCore.Settings
 
     Component.onCompleted: {
         Common.Colors.theme = settings.theme;
+        topPanelViewModel.language = settings.language;
     }
 
     // ...

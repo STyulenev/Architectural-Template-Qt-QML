@@ -6,7 +6,6 @@ auto main(int argc, char* argv[]) -> int
 {
     ATQQ::Core::Application app(argc, argv);
 
-
     QQmlApplicationEngine engine;
     engine.addImportPath("qrc:/qml");
     engine.addImportPath("qrc:/qml/Styles");
