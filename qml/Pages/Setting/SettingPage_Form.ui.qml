@@ -14,6 +14,9 @@ Forms.OneButtonForm {
 
     signal languageChanged(index: int)
 
+    property alias languageCurrentIndex: languageComboBox.currentIndex
+    property alias languageModel: languageComboBox.model
+
     QtObject {
         id: internal
 
@@ -78,9 +81,7 @@ Forms.OneButtonForm {
             Layout.preferredHeight: internal.height
             Layout.preferredWidth: 2 * internal.width
 
-            model: [ qsTr("Русский"), qsTr("Английский") ]
-
-            currentIndex: 0
+            textRole: "text"
 
             Connections {
                 target: languageComboBox

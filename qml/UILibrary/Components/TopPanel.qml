@@ -21,8 +21,13 @@ TopPanel_Form {
     } // QtCore.Settings
 
     Component.onCompleted: {
-        Common.Colors.theme = settings.theme;
-        topPanelViewModel.language = settings.language;
+        if (settings.theme)
+            Common.Colors.theme = settings.theme;
+
+        if (settings.language) {
+            topPanelViewModel.language = settings.language;
+            Common.Values.language = settings.language;
+        }
     }
 
     // ...

@@ -11,3 +11,4 @@ singleton Consts  1.0 Consts.qml
 singleton Enums   1.0 Enums.qml
 singleton Fonts   1.0 Fonts.qml
 singleton RegExps 1.0 RegExps.qml
+singleton Values  1.0 Values.qml

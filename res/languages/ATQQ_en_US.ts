@@ -38,6 +38,19 @@
     </message>
 </context>
 <context>
+    <name>LanguageListModel</name>
+    <message>
+        <location filename="../../qml/Model/LanguageListModel.qml" line="7"/>
+        <source>Русский</source>
+        <translation>Russian</translation>
+    </message>
+    <message>
+        <location filename="../../qml/Model/LanguageListModel.qml" line="12"/>
+        <source>Английский</source>
+        <translation>English</translation>
+    </message>
+</context>
+<context>
     <name>MainMenuPage_Form.ui</name>
     <message>
         <location filename="../../qml/Pages/Menu/MainMenuPage_Form.ui.qml" line="10"/>
@@ -68,39 +81,29 @@
         <translation>Back</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="41"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="44"/>
         <source>Тема:</source>
         <translation>Theme:</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="50"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="53"/>
         <source>Синяя</source>
         <translation>Blue</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="50"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="53"/>
         <source>Фиолетовая</source>
         <translation>Purple</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="50"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="53"/>
         <source>Красная</source>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="72"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="75"/>
         <source>Язык:</source>
         <translation>Language:</translation>
-    </message>
-    <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="81"/>
-        <source>Русский</source>
-        <translation>Russian</translation>
-    </message>
-    <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="81"/>
-        <source>Английский</source>
-        <translation>English</translation>
     </message>
 </context>
 <context>

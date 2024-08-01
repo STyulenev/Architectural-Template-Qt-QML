@@ -12,6 +12,7 @@
         <file>qml/Common/Fonts.qml</file>
         <file>qml/Common/Enums.qml</file>
         <file>qml/Common/RegExps.qml</file>
+        <file>qml/Common/Values.qml</file>
 
         <!-- Внешнии модули -->
         <file>qml/External/qmldir</file>
@@ -22,7 +23,8 @@
         <file>qml/Logic/qmldir</file>
 
         <!-- Модели -->
-        <file>qml/Models/qmldir</file>
+        <file>qml/Model/qmldir</file>
+        <file>qml/Model/LanguageListModel.qml</file>
         <!-- ... -->
 
         <!-- Страницы приложения -->
