@@ -18,6 +18,7 @@ include(cmake/TranslationUtils.cmake)
 add_app_translations_resource(APP_RES ${QM_FILES})
 
 add_subdirectory(src)
+add_subdirectory(tests)
 
 set(PROJECT_SOURCES
     main.cpp
