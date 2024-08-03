@@ -4,7 +4,7 @@
 #
 ########################################################################################################
 
-module Model
+module Models
 
 LanguageListModel 1.0 LanguageListModel.qml
 # ...

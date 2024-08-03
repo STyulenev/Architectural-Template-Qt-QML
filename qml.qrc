@@ -19,13 +19,12 @@
         <!-- ... -->
 
         <!-- Логика (js-функции) -->
-        <file>qml/Logic/Functions.js</file>
         <file>qml/Logic/qmldir</file>
+        <file>qml/Logic/Functions.js</file>
 
         <!-- Модели -->
-        <file>qml/Model/qmldir</file>
-        <file>qml/Model/LanguageListModel.qml</file>
-        <!-- ... -->
+        <file>qml/Models/qmldir</file>
+        <file>qml/Models/LanguageListModel.qml</file>
 
         <!-- Страницы приложения -->
         <file>qml/Pages/qmldir</file>

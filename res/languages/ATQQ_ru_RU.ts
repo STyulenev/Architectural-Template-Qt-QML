@@ -40,12 +40,12 @@
 <context>
     <name>LanguageListModel</name>
     <message>
-        <location filename="../../qml/Model/LanguageListModel.qml" line="7"/>
+        <location filename="../../qml/Models/LanguageListModel.qml" line="7"/>
         <source>Русский</source>
         <translation>Русский</translation>
     </message>
     <message>
-        <location filename="../../qml/Model/LanguageListModel.qml" line="12"/>
+        <location filename="../../qml/Models/LanguageListModel.qml" line="13"/>
         <source>Английский</source>
         <translation>Английский</translation>
     </message>
