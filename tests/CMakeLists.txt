@@ -6,5 +6,5 @@ project(Tests
     LANGUAGES CXX
 )
 
-add_subdirectory(qmltests)
+add_subdirectory(qml-tests)
 # ...
