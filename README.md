@@ -174,3 +174,21 @@ docker run docker-gui
 ```bash
 qmltestrunner -input tst_LanguageListModel.qml
 ```
+
+## Версии
+
+Версии сред, языков и утилит, которые использовались на момент написания проекта.
+
+| Название   | Версия               |
+| -----------|----------------------|
+| C++        | 20                   |
+| Qt Creator | 13.0.2               |
+| Qt         | 6.6.3                |
+| CMake      | 3.24.2               |
+| QMake      | 6.6.3.0              |
+| MinGW      | 11.2.0 64 bit        |
+
+Запускалось на:
+- [x] Windows 11 22H2
+- [x] Ubuntu 22.04 (через Docker)
+- [ ] Mac

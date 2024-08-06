@@ -12,11 +12,13 @@ TopPanelViewModel::TopPanelViewModel(QObject* parent) :
     m_languageController = qobject_cast<Controllers::LanguageController*>(qApp->property("LanguageController").value<QObject*>());
 
     connect(m_languageController, &Controllers::LanguageController::languageChanged, this, &TopPanelViewModel::languageChanged);
+
+    qDebug() << Q_FUNC_INFO;
 }
 
 TopPanelViewModel::~TopPanelViewModel()
 {
-
+    qDebug() << Q_FUNC_INFO;
 }
 
 auto TopPanelViewModel::getLanguage() -> const QString&

@@ -11,15 +11,19 @@ Application::Application(int& argc, char** argv) :
     QGuiApplication(argc, argv),
     engine(nullptr)
 {
+    Controllers::LoggingController::instance()->setDebugMessageHandler();
+
     setOrganizationName("Organization");
     setOrganizationDomain("organization.com");
 
     languageController = new Controllers::LanguageController(this);
+
+    qDebug() << Q_FUNC_INFO;
 }
 
 Application::~Application()
 {
-
+    qDebug() << Q_FUNC_INFO;
 }
 
 auto Application::launch() -> void
@@ -27,8 +31,6 @@ auto Application::launch() -> void
     if (!engine) {
         qApp->exit(1);
     }
-
-    Controllers::LoggingController::instance()->setDebugMessageHandler();
 
     ViewModels::qmlRegisterTypes();
     // ...

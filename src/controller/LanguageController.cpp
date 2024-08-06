@@ -16,11 +16,13 @@ LanguageController::LanguageController(QObject* parent) :
 {
     m_translator = new QTranslator(this);
     qApp->installTranslator(m_translator);
+
+    qDebug() << Q_FUNC_INFO;
 }
 
 LanguageController::~LanguageController()
 {
-
+    qDebug() << Q_FUNC_INFO;
 }
 
 auto LanguageController::setLanguage(const QString& langugage) -> void
