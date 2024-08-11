@@ -13,6 +13,7 @@ Application::Application(int& argc, char** argv) :
 {
     Controllers::LoggingController::instance()->setDebugMessageHandler();
 
+    setApplicationName("Architectural-Template-Qt-QML");
     setOrganizationName("Organization");
     setOrganizationDomain("organization.com");
 

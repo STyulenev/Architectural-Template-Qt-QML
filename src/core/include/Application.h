@@ -5,7 +5,7 @@
 
 namespace ATQQ::Controllers {
     class LanguageController;
-} // namespace ATQQ::Controllers
+}
 
 namespace ATQQ::Core {
 

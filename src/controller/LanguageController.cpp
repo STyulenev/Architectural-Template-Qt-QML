@@ -5,10 +5,6 @@
 #include <QDir>
 #include <QDebug>
 
-#include <QQmlApplicationEngine>
-#include <QQmlEngine>
-#include <QQmlContext>
-
 namespace ATQQ::Controllers {
 
 LanguageController::LanguageController(QObject* parent) :

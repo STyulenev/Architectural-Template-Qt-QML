@@ -16,6 +16,7 @@ Forms.OneButtonForm {
 
     property alias languageCurrentIndex: languageComboBox.currentIndex
     property alias languageModel: languageComboBox.model
+    property alias themeCurrentIndex: themeComboBox.currentIndex
 
     QtObject {
         id: internal
@@ -52,13 +53,11 @@ Forms.OneButtonForm {
 
             model: [ qsTr("Синяя"), qsTr("Фиолетовая"), qsTr("Красная") ]
 
-            currentIndex: Common.Colors.theme
-
             Connections {
                 target: themeComboBox
 
-                function onCurrentIndexChanged() {
-                    Common.Colors.changeTheme(themeComboBox.currentIndex);
+                function onActivated(index) {
+                    Common.Colors.changeTheme(index);
                 }
             } // Connections
         } // ComboBox

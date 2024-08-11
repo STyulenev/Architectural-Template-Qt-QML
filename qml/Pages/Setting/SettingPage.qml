@@ -8,13 +8,12 @@ SettingPage_Form {
     id: formSettingPage
 
     languageModel: Models.LanguageListModel { }
-
-    Component.onCompleted: {
-        languageCurrentIndex = languageModel.getIndex(Common.Values.language);
-    }
+    languageCurrentIndex: languageModel.getIndex(Common.Values.language);
+    themeCurrentIndex: Common.Colors.theme
 
     onLanguageChanged: (index) => {
         topPanel.topPanelViewModel.language = languageModel.get(index).code;
+        themeCurrentIndex = Common.Colors.theme;
     }
 
     onButtonClicked: {

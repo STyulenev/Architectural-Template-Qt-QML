@@ -24,7 +24,7 @@ signals:
 
 private:
     QTranslator* m_translator;
-    QString m_currLang;
+    QString      m_currLang;
 
 };
 
