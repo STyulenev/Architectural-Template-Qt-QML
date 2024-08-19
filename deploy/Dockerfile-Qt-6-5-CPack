@@ -1,0 +1,17 @@
+FROM a12e/docker-qt:6.5-linux as build
+
+ARG IP_ADDRESS
+ENV DISPLAY_IP_ADDRESS $IP_ADDRESS
+
+ENV DISPLAY=${IP_ADDRESS}:0
+RUN echo 'export DISPLAY=${DISPLAY_IP_ADDRESS}:0' >> /home/user/.bashrc
+
+ENV QT_QUICK_BACKEND=software
+
+WORKDIR /app/build
+
+ADD . /app/source
+
+RUN cmake ../source && cmake --build . && cpack -G DEB && sudo dpkg --install architectural-template-qt-qml_0.1_amd64.deb
+
+ENTRYPOINT ["Architectural-Template-Qt-QML"]
