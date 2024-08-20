@@ -16,6 +16,6 @@
 
 ![alt text](ATQQ-MainMenu.png)
 
-4. Страница настроек:
+5. Страница настроек:
 
 ![alt text](ATQQ-SettingPage.png)
