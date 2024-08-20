@@ -81,27 +81,27 @@
         <translation>Back</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="44"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="45"/>
         <source>Тема:</source>
         <translation>Theme:</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="53"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="54"/>
         <source>Синяя</source>
         <translation>Blue</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="53"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="54"/>
         <source>Фиолетовая</source>
         <translation>Purple</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="53"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="54"/>
         <source>Красная</source>
         <translation>Red</translation>
     </message>
     <message>
-        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="75"/>
+        <location filename="../../qml/Pages/Setting/SettingPage_Form.ui.qml" line="74"/>
         <source>Язык:</source>
         <translation>Language:</translation>
     </message>
