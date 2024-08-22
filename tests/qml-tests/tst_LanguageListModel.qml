@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtTest 1.1
 
-import "../../qml/Models" 1.0 as Models
+import Models 1.0 as Models
 
 TestCase {
     id: root

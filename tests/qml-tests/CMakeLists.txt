@@ -14,8 +14,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 enable_testing()
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS QuickTest)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS QuickTest)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS QuickTest Qml)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS QuickTest Qml)
 
 # no need to copy around qml test files for shadow builds - just set the respective define
 add_definitions(-DQUICK_TEST_SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
@@ -23,11 +23,23 @@ add_definitions(-DQUICK_TEST_SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 file(GLOB_RECURSE QML_FILES "tst_*.qml")
 add_custom_target(qmlfiles SOURCES ${QML_FILES})
 
-add_executable(${PROJECT_NAME} main.cpp)
-add_test(NAME QMLTest COMMAND QMLTest)
+add_executable(${PROJECT_NAME}
+    main.cpp
+    ${CMAKE_SOURCE_DIR}/qml.qrc
+    ${CMAKE_SOURCE_DIR}/resource.qrc
+)
+
+# target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/src)
+
+add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME}
+  -import ${CMAKE_SOURCE_DIR}/qml
+  -import ${CMAKE_SOURCE_DIR}/qml/Styles
+  -import ${CMAKE_SOURCE_DIR}/qml/UILibrary
+)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt${QT_VERSION_MAJOR}::QuickTest
+    Qt${QT_VERSION_MAJOR}::Qml
 )
 
 set_target_properties(${PROJECT_NAME}
