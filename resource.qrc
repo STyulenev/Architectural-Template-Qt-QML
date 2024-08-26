@@ -5,7 +5,7 @@
         <file>res/fonts/Helvetica.ttf</file>
 
         <!-- Иконки -->
-        <!-- <file>res/icons/...</file> -->
+        <file>res/icons/icons-tray.png</file>
 
         <!-- Картинки -->
         <!-- <file>res/images/...</file> -->

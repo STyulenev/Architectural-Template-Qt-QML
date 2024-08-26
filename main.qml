@@ -7,6 +7,8 @@ import QtCore as QtCore
 import Common 1.0 as Common
 import Components 1.0 as Components
 
+import Qt.labs.platform 1.1
+
 ApplicationWindow {
     id: applicationWindow
 
@@ -23,6 +25,12 @@ ApplicationWindow {
 
     property bool headerVisible: false
 
+    QtObject {
+        id: internal
+
+        property bool isTray: true
+    } // QtObject
+
     QtCore.Settings {
         id: applicationWindowSettings
 
@@ -33,6 +41,47 @@ ApplicationWindow {
         property alias width: applicationWindow.width
         property alias height: applicationWindow.height
     } // QtCore.Settings
+
+    SystemTrayIcon {
+        id: systemTray
+
+        visible: true
+
+        icon.source: "qrc:/res/icons/icons-tray.png"
+        tooltip: "Architectural-Template-Qt-QML"
+
+        onActivated: {
+            trayMenu.open();
+        }
+    } // SystemTrayIcon
+
+    Menu {
+        id: trayMenu
+
+        MenuItem {
+            text: qsTr("Развернуть окно")
+
+            onTriggered: {
+                applicationWindow.show()
+            }
+        } // MenuItem
+
+        MenuItem {
+            text: qsTr("Выход")
+
+            onTriggered: {
+                systemTray.hide();
+                internal.isTray = false;
+                Qt.quit();
+            }
+        } // MenuItem
+    } // Menu
+
+    onClosing: (close) => {
+        close.accepted = !internal.isTray;
+        applicationWindow.hide();
+        systemTray.showMessage("Architectural-Template-Qt-QML", qsTr("Приложение свёрнуто."));
+    }
 
     header: Components.TopPanel {
         id: topPanel

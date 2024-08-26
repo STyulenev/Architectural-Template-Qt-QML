@@ -122,4 +122,22 @@
         <translation>Ok</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../../main.qml" line="56"/>
+        <source>Развернуть окно</source>
+        <translation>Expand window</translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="63"/>
+        <source>Выход</source>
+        <translation>Exit</translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="74"/>
+        <source>Приложение свёрнуто.</source>
+        <translation>The application is minimized.</translation>
+    </message>
+</context>
 </TS>

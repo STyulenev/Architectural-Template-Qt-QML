@@ -122,4 +122,22 @@
         <translation>Ок</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../../main.qml" line="56"/>
+        <source>Развернуть окно</source>
+        <translation>Развернуть окно</translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="63"/>
+        <source>Выход</source>
+        <translation>Выход</translation>
+    </message>
+    <message>
+        <location filename="../../main.qml" line="74"/>
+        <source>Приложение свёрнуто.</source>
+        <translation>Приложение свёрнуто.</translation>
+    </message>
+</context>
 </TS>
